@@ -8,7 +8,7 @@
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 <meta content="utf-8" http-equiv="encoding">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -18,13 +18,13 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
 
 <script src="~/../js/greelog.js"></script>
 <style>
 
 .input_text{
-	 
+
 	width: 80%;
 }
 </style>
@@ -37,7 +37,7 @@
 <body>
 
 <div id='content' ng-controller="dashoboard_controller">
- 
+
  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="display:block">
       <div class="container">
         <div class="navbar-header">
@@ -50,11 +50,11 @@
           <a class="navbar-brand" href="#">Greelog</a>
         </div>
         <div class="navbar-collapse collapse">
-	  	
+
 	  	<!--  <div style="float:left; margin: 15px 0px 0px 20px;color:#FFFFFF">My task </div> -->
 
-          <form name="loginForm" methode="POST" action="/_login" class="navbar-form navbar-right" role="form">
-	        
+          <form name="loginForm" methode="POST" action="/_logout" class="navbar-form navbar-right" role="form">
+
             <div class="form-group">
               <h5><span id= "username" style="color : #FFFFFF; margin-right:10px;">Welcome</span><span style="margin-right:25px;" class="badge">42</span> </h5>
             </div>
@@ -64,14 +64,14 @@
       </div>
  </div>
 </div>
- 
+
 
 
 
  <!-- MAIN CONTENT -->
  <div class="container" style="display:block;margin-top:65px;background:#FFFFFF">
 
- 	<h5> Recommended task </h5> 
+ 	<h5> Recommended task </h5>
 
 
  	<div class="row">
@@ -80,7 +80,7 @@
 	          <h4 style="display:inline;margin-right:10px">Heading</h4> <span style="display:inline;"class="badge">42</span>
 	          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 	          <p><a class="btn btn-default"  data-toggle="modal" data-target="#submitTaskModal" role="button">Submit details &raquo;</a></p>
-	        </div> 
+	        </div>
         </div>
         <div class="col-md-4">
           <div class="tasks">
@@ -88,18 +88,18 @@
 
 	          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 	          <p><a class="btn btn-default"  data-toggle="modal" data-target="#submitTaskModal" role="button">Submit details &raquo;</a></p>
-	       </div> 
+	       </div>
        </div>
         <div class="col-md-4">
         	<div class="tasks">
 	          <h4 style="display:inline;margin-right:10px">Heading</h4> <span style="display:inline;"class="badge">42</span>
 	          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 	          <p><a class="btn btn-default"  data-toggle="modal" data-target="#submitTaskModal" role="button">Submit details &raquo;</a></p>
-	        </div>  
+	        </div>
         </div>
       </div>
 
- 	 
+
 
  </div> <!-- Main container end -->
 
@@ -159,11 +159,11 @@
 
 	  		<ul class="list-inline custom" style="float : right;color: #FFFFFF">
 				  <li class="active menu-list">Task</li>
-            	  <li class="menu-list" onclick="location.href='~/../posts.tpl'">New Post</li>
-            	  <li class="menu-list" onclick="location.href='~/../events.tpl'">Events</li>
-            	  <li class="menu-list" onclick="location.href='~/../events.tpls'">Explore</li>
+            	  <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_insert_post'">New Post</li>
+            	  <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_events'">Events</li>
+            	  <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_list_posts'">Explore</li>
 			</ul>
-          
+
         </div><!--/.navbar-collapse -->
       </div>
  </div>
@@ -179,7 +179,7 @@
 
 <script type="text/javascript">
 
-	 
+
 
 
 </script>

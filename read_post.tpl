@@ -2,7 +2,7 @@
 <html ng-app="appUser">
 
 <head>
-<title>Greelog</title>
+<title>Greelog: {{title}}</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -12,7 +12,7 @@
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="~/../css/greelog.css">
+<link rel="stylesheet" href="http://greelog.pythonanywhere.com/css/greelog.css">
 
 
 <!-- Latest compiled and minified JavaScript -->
@@ -25,7 +25,7 @@
 
 .input_text{
 
-	width: 80%;
+  width: 80%;
 }
 </style>
 
@@ -35,7 +35,6 @@
 
 
 <body>
-
 <div id='content' ng-controller="dashoboard_controller">
 
  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="display:block">
@@ -51,7 +50,7 @@
         </div>
         <div class="navbar-collapse collapse">
 
-	  	<!--  <div style="float:left; margin: 15px 0px 0px 20px;color:#FFFFFF">My task </div> -->
+      <!--  <div style="float:left; margin: 15px 0px 0px 20px;color:#FFFFFF">My task </div> -->
 
           <form name="loginForm" methode="POST" action="/_logout" class="navbar-form navbar-right" role="form">
 
@@ -71,28 +70,19 @@
  <!-- MAIN CONTENT -->
  <div class="container-fluid" style="display:block;margin-top:65px;background:#FFFFFF">
 
- 	  <form id="submitPostForm" method="post" class="form-horizontal">
-                    <div class="form-group">
-                        <label style="text-align:right !important" class="col-sm-3 control-label">Title</label>
-                        <input type="text" style="display:none" class="form-control" name="tid" />
-                        <div class="col-md-5">
-                            <input type="text" class="form-control" name="title" />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label style="text-align:right !important" class="col-sm-3 control-label">Body</label>
-                        <div class="col-md-7">
-                            <textarea type="text" rows="18"  class="form-control input-lg" name="description" ></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-md-5 col-md-offset-3">
-                            <button type="submit" class="btn btn-success" style= "padding: 0.5em 1em 0.5em 1em">Draft</button>
-                            <button type="submit" class="btn btn-success" style="padding:0.5em 1em 0.5em 1em;margin-left:3em">Publish</button>
-                        </div>
+                    <div  style="display=block">
 
+                        <div class="col-md-12">
+                            <sapn type="text" class="form-control" name="title" >{{title}}</span>
+                        </div>
                     </div>
-    </form>
+                    <div  style="display:block">
+
+                        <div class="col-md-12">
+                            <span type="text" rows="18"  class="form-control input-lg" name="description" >{{body}}</span>
+                        </div>
+                    </div>
+
 
 
  </div> <!-- Main container end -->
@@ -118,12 +108,12 @@
         </div>
         <div class="navbar-collapse collapse" id= "bottom-navbar-collapse">
 
-	  		<ul class="list-inline custom" style="float : right;color: #FFFFFF">
-				        <li class="menu-list" onclick="location.href='~/../_dashboard'">Task</li>
-                <li class="active menu-list" onclick="location.href='~/../_insert_post'">New Post</li>
-                <li class="menu-list" onclick="location.href='~/../events.tpl'">Events</li>
-                <li class="menu-list" onclick="location.href='~/../events.tpl'">Explore</li>
-			 </ul>
+        <ul class="list-inline custom" style="float : right;color: #FFFFFF">
+                <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_dashboard'">Task</li>
+                <li class="active menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_insert_post'">New Post</li>
+                <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_events'">Events</li>
+                <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_events'">Explore</li>
+       </ul>
 
         </div><!--/.navbar-collapse -->
       </div>

@@ -121,7 +121,7 @@
 			</div>
 			<div class="form-group">
 
-				<input type="text" placeholder="Captcha" id="captcha" name="captcha" class="form-control input_text">
+				<input type="text" placeholder="Are You Human?" id="captcha" name="captcha" class="form-control input_text">
 			</div>
 
 
@@ -146,14 +146,12 @@
 </body>
 <script>
 
-	function onloadFunction	(){
-
-		 var rand = String(Math.random()).slice(2);
-		 document.getElementById('rand').value = rand;
-
+	function onloadFunction	() {
+		 var rand, cimage;
+		 rand = 'greelog_' + String(Math.random()).slice(2);
 		 cimage = document.getElementById('captchaimg');
-		 cimage.src = "https://captchator.com/captcha/image/"+ rand;
-
+		 document.getElementById('rand').value = rand;
+		 cimage.src = "http://www.opencaptcha.com/img/"+ rand + ".jpgx";
 	}
 
 </script>

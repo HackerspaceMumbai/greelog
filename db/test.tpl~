@@ -1,0 +1,15 @@
+<!doctype html>
+<h1>Hello, <i>{{name}}!</i></h1>
+
+%   if 1 == 1:
+       <b>one</b>
+%    else:
+        <i>two</i>
+%    end
+
+<%
+    for x in [1,2,3]:
+        {{x}}
+    end
+
+%> 

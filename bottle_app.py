@@ -1,4 +1,4 @@
-import bottle;
+import bottle127 as bottle;
 import utils;
 import cdb;
 from db_cons import XLAT_INDIVIDUALS as xlat_i;
@@ -28,7 +28,8 @@ def check_cookie():
 
 @app.get('/')
 def homepage():
-    return render('welcome.tpl');
+    msg = request.query.get('msg', '');
+    return render('welcome.tpl', msg=msg);
 
 @app.post('/_login')
 def login():
@@ -50,7 +51,9 @@ def register():
     rand = request.forms.get('rand');
     captcha = request.forms.get('captcha');
     veri = utils.verify_signup(fname, lname, iname, ihasw, rand, captcha);
-    if veri is not True: return 'INVALID REGISTRATION ATTEMPT(%s.)' % veri;
+    if veri is not True:
+        msg = ('REGISTRATION FAILED: ' + veri)
+        redirect('/?msg=%s' % msg);
     cdb.insert_individual(fname, lname, iname, ihasw);
     set_cookie(iname);
     redirect(HOME + '_dashboard');

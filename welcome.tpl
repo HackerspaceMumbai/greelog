@@ -79,6 +79,7 @@
 		  	<div class="panel-heading">
 			            <div class="panel-title" style="color:#FFFFFF;font-style:oblique;font-size:2.5em;text-align:center">Join Greelog</div>
 		  	</div>
+		  	<div class="panel-heading" style="color: red; font-weight: bold;">{{msg}}</div>
         <div class="panel-body" >
 			<form name="sign_up_form" id="sign_up_form" action="_register"  method="POST" onsubmit="return :match_password()" class="form-horizontal" novalidate role="form">
 

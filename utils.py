@@ -15,6 +15,6 @@ def verify_signup(fname, lname, iname, ihasw, rand, captcha):
     if cdb.select_individual(iname) is not None:
         return 'USERNAME UNAVAILABLE';
     if not check_captcha(rand, captcha):
-        return 'CAPTCHA VALIDATION FAILED';
+        return 'CAPTCHA MISMATCH';
     return True;
 

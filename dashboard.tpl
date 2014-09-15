@@ -77,23 +77,23 @@
  	<div class="row">
         <div class="col-md-4">
           <div class="tasks">
-	          <h4 style="display:inline;margin-right:10px">Heading</h4> <span style="display:inline;"class="badge">42</span>
-	          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+	          <h4 style="display:inline;margin-right:10px">Rain-Water Harvesting</h4> <span style="display:inline;"class="badge">250</span>
+	          <p>Conserve the rain water by implementing rain water harvesting system at your society.</p>
 	          <p><a class="btn btn-default"  data-toggle="modal" data-target="#submitTaskModal" role="button">Submit details &raquo;</a></p>
 	        </div>
         </div>
         <div class="col-md-4">
           <div class="tasks">
-	          <h4 style="display:inline;margin-right:10px">Heading</h4> <span style="display:inline;"class="badge">42</span>
+	          <h4 style="display:inline;margin-right:10px">Adopt-a-tree</h4> <span style="display:inline;"class="badge">50</span>
 
-	          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+	          <p>By helping to water and care for a young street tree, you can help build a healthy tree canopy on your street.</p>
 	          <p><a class="btn btn-default"  data-toggle="modal" data-target="#submitTaskModal" role="button">Submit details &raquo;</a></p>
 	       </div>
        </div>
         <div class="col-md-4">
         	<div class="tasks">
-	          <h4 style="display:inline;margin-right:10px">Heading</h4> <span style="display:inline;"class="badge">42</span>
-	          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+	          <h4 style="display:inline;margin-right:10px">Replace standard bulbs with CFLs</h4> <span style="display:inline;"class="badge">30</span>
+	          <p>Compact fluorescent light bulbs are more energy-efficient than regular bulbs, while giving off the same amount of light.</p>
 	          <p><a class="btn btn-default"  data-toggle="modal" data-target="#submitTaskModal" role="button">Submit details &raquo;</a></p>
 	        </div>
         </div>
@@ -183,4 +183,3 @@
 
 
 </script>
-

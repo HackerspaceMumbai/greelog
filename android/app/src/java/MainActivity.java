@@ -1,22 +1,25 @@
 package com.macrohard.suraj.greelog;
 
-import android.app.Activity;
 import android.content.Intent;
+import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
 import android.widget.ShareActionProvider;
 
+import javax.security.auth.Subject;
 
-public class MainActivity extends Activity {
-    WebView ourBrowser;
+
+public class MyActivity extends ActionBarActivity {
+
+    private WebView ourBrowser;
     private ShareActionProvider mShareActionProvider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_my);
         ourBrowser = (WebView) findViewById(R.id.wvMainactivity);
         ourBrowser.setWebViewClient(new ViewClient());
 
@@ -37,21 +40,21 @@ public class MainActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate menu resource file.
-        getMenuInflater().inflate(R.menu.main, menu);
-
-        // Locate MenuItem with ShareActionProvider
-        MenuItem item = menu.findItem(R.id.menu_item_share);
-
-        // Fetch and store ShareActionProvider
-        mShareActionProvider = (ShareActionProvider) item.getActionProvider();
-        Intent shareIntent = new Intent(Intent.ACTION_SEND);
-        shareIntent.setAction(Intent.ACTION_SEND);
-        shareIntent.setType("text/plain");
-        shareIntent.putExtra(Intent.EXTRA_TEXT ,"via GreeLog");
-        mShareActionProvider.setShareIntent(shareIntent);
-
-        // Return true to display menu
-        return true;
+        getMenuInflater().inflate(R.menu.my,menu);
+        MenuItem share = menu.findItem(R.id.menu_item_share);
+       share.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+           @Override
+           public boolean onMenuItemClick(MenuItem item) {
+               Intent intent=new Intent(android.content.Intent.ACTION_SEND);
+               intent.setType("text/plain");
+               intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+               intent.putExtra(Intent.EXTRA_SUBJECT, "Share message");
+               intent.putExtra(Intent.EXTRA_TEXT, "Shared via Greelog");
+               startActivity(Intent.createChooser(intent, "Share Via"));
+               return true;
+           }
+       });
+        return  true;
     }
 
 

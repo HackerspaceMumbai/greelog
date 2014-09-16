@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
         ourBrowser.getSettings().setLoadWithOverviewMode(true);
         ourBrowser.getSettings().setUseWideViewPort(true);
 
-        ourBrowser.loadUrl("http://www.greelog.pythonanywhere.com");
+        ourBrowser.loadUrl("http://greelog.pythonanywhere.com");
 
     }
 

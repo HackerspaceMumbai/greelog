@@ -2,7 +2,7 @@
 <html ng-app="appUser">
 
 <head>
-<title>Greelog: {{title}}</title>
+<title>{{title}} ~Greelog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -73,23 +73,19 @@
                     <div  style="display=block">
 
                         <div class="col-md-12">
-                            <sapn type="text" class="form-control" name="title" >{{title}}</span>
+                            <span type="text" class="modal-title" style="font-size: 200%;"><center>{{title}}</center></span>
                         </div>
                     </div>
+                    <hr/>
                     <div  style="display:block">
-
                         <div class="col-md-12">
-                            <span type="text" rows="18"  class="form-control input-lg" name="description" >{{body}}</span>
+                            <span type="text" rows="18" class="form-control input-lg" name="description" >{{body}}</span>
                         </div>
                     </div>
 
 
 
  </div> <!-- Main container end -->
-
-
-
-
 
 
 <!-- FOOTER -->
@@ -109,29 +105,15 @@
         <div class="navbar-collapse collapse" id= "bottom-navbar-collapse">
 
         <ul class="list-inline custom" style="float : right;color: #FFFFFF">
-                <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_dashboard'">Task</li>
+                <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_dashboard'">Tasks</li>
                 <li class="active menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_insert_post'">New Post</li>
                 <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_events'">Events</li>
-                <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_events'">Explore</li>
+                <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_explore'">Explore</li>
        </ul>
 
         </div><!--/.navbar-collapse -->
       </div>
  </div>
-</div>
 
-
-
-
-
-</div>
-</body>
-
-
-<script type="text/javascript">
-
-
-
-
-</script>
-
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54194d9d28af811d"></script>
+</body></html>

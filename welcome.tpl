@@ -2,7 +2,7 @@
 <html ng-app="appUser">
 
 <head>
-<title>Greelog</title>
+<title>GreeLog</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -46,10 +46,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Greelog</a>
+          <a class="navbar-brand" href="#">GreeLog</a>
         </div>
         <div class="navbar-collapse collapse">
 
+    <a target="_blank" href="http://greelog.pythonanywhere.com/greelog-android.apk" style="margin-left:50px;padding:10px;">
+       <img src="img/play-store.png" alt="Play Store" style="width:45px;height:45px;margin-top:2px;"></img>
+    </a>
           <form name="loginForm" method="POST" action="~/../_login" class="navbar-form navbar-right" role="form">
 	     <div class="form-group">
 
@@ -77,9 +80,9 @@
 	<div class="col-md-4">
           <div class="panel" style="background: rgba(255,255,255,0.2) !important">
 		  	<div class="panel-heading">
-			            <div class="panel-title" style="color:#FFFFFF;font-style:oblique;font-size:2.5em;text-align:center">Join Greelog</div>
+			            <div class="panel-title" style="color:#FFFFFF;font-style:oblique;font-size:2.5em;text-align:center">Join GreeLog</div>
 		  	</div>
-		  	<div class="panel-heading" style="color: red; font-weight: bold;">{{msg}}</div>
+		  	<div class="panel-heading" style="color: red; font-weight: bold; text-align: center;">{{msg}}</div>
         <div class="panel-body" >
 			<form name="sign_up_form" id="sign_up_form" action="_register"  method="POST" onsubmit="return :match_password()" class="form-horizontal" novalidate role="form">
 
@@ -185,6 +188,9 @@
 
 
 </script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54194d9d28af811d"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54194d9d28af811d"></script>
 
 </html>
 

@@ -34,7 +34,7 @@
 </head>
 
 
-<body style="background-image : url('~/../img/GreeLog_Cover_Photo.jpg'); ">
+<body style="background-image : url('~/../img/GreeLog_Cover_Photo.jpg'); background-size: cover">
 
 <div id='content' ng-controller="dashoboard_controller">
 
@@ -77,26 +77,21 @@
  	<div class="row">
         <div class="col-md-4">
           <div class="tasks">
-	          <h4 style="display:inline;margin-right:10px">Heading</h4>
-	          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-	          <p><a class="btn btn-default"  data-toggle="modal" data-target="#submitTaskModal" role="button">View &raquo;</a></p>
+	          <h4 style="display:inline;margin-right:10px">Festivals polute !!</h4>
+	          <p>The pollution arround the world is shooting up abruptly due to various factors and the pollution due to festivals is also one among them.</p>
+	          <p><a class="btn btn-default"  onclick="location.href='http://greelog.pythonanywhere.com/_explore'" role="button">View &raquo;</a></p>
 	        </div>
         </div>
+
         <div class="col-md-4">
           <div class="tasks">
-	          <h4 style="display:inline;margin-right:10px">Heading</h4>
-
-	          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-	          <p><a class="btn btn-default"  data-toggle="modal" data-target="#submitTaskModal" role="button">View &raquo;</a></p>
-	       </div>
-       </div>
-        <div class="col-md-4">
-        	<div class="tasks">
-	          <h4 style="display:inline;margin-right:10px">Heading</h4>
-	          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-	          <p><a class="btn btn-default"  data-toggle="modal" data-target="#submitTaskModal" role="button">View &raquo;</a></p>
+	          <h4 style="display:inline;margin-right:10px">Open environmental data resources</h4>
+	          <p>The World Bank has current and historical datasets available for every country in the world. Environmental topics include CO2 emissions, temperature changes, rainfall, health and social effects.</p>
+	          <p><a class="btn btn-default"  onclick="location.href='http://greelog.pythonanywhere.com/_explore'" role="button">View &raquo;</a></p>
 	        </div>
         </div>
+
+
       </div>
 
 
@@ -120,20 +115,21 @@
                         <label class="col-md-3 control-label">Link</label>
                         <input type="text" style="display:none" class="form-control" name="eid" />
                         <div class="col-md-9">
-                           <label id="eLink" class="control-label">Link</label>
+                           <label id="eLink" class="control-label"><a target="_blank" href="https://geekli.st/hackathon/hack4good-06?tab=about">Hack4Good</a></label>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-3 control-label">Description</label>
                         <div class="col-md-9">
-                            <label id="eDescription" class="control-label">Hackathon</label>
+                            <label id="eDescription" class="control-label">Hackathqon</label>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label class="col-md-3 control-label">Venue</label>
                         <div class="col-md-9">
-                            <label id="eDescription" class="control-label">VJTI College asdfasdf asd asdfasdf asdf asdfasdfasdfasdfasd fas dfasd fasdf asdf asdfasdfads fasdfsadfasdf fa fasdf asdf asdf asdfasdf</label>
+                            <label id="eDescription" class="control-label"><p>VJTI College</p><p> Mumbai</p><p>India</p></label>
+
                         </div>
                     </div>
 
@@ -174,10 +170,10 @@
         <div class="navbar-collapse collapse" id= "bottom-navbar-collapse">
 
 	  		<ul class="list-inline custom" style="float : right;color: #FFFFFF">
-                <li class="menu-list" onclick="location.href='~/../_dashboard'">Task</li>
-                <li class="menu-list" onclick="location.href='~/../_insert_post'">New Post</li>
-                <li class="active menu-list" onclick="location.href='~/../events.tpl'">Events</li>
-                <li class="menu-list" onclick="location.href='~/../events.tpl'">Explore</li>
+                <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_dashboard'">Tasks</li>
+                <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_insert_post'">New Post</li>
+                <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_events'">Events</li>
+                <li class="active menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_explore'">Explore</li>
 			</ul>
 
         </div><!--/.navbar-collapse -->
@@ -191,12 +187,4 @@
 
 </div>
 </body>
-
-
-<script type="text/javascript">
-
-
-
-
-</script>
 

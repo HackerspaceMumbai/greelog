@@ -34,7 +34,7 @@
 </head>
 
 
-<body>
+<body style="background-image : url('~/../img/GreeLog_Cover_Photo.jpg');background-size: cover">
 
 <div id='content' ng-controller="dashoboard_controller">
 
@@ -63,32 +63,32 @@
         </div><!--/.navbar-collapse -->
       </div>
  </div>
-</div>
+
 
 
 
 
  <!-- MAIN CONTENT -->
- <div class="container-fluid" style="display:block;margin-top:65px;background:#FFFFFF">
+ <div class="container-fluid" style="display:block;margin-top:55px;">
 
- 	  <form id="submitPostForm" method="post" class="form-horizontal">
+ 	  <form id="submitPostForm" method="post" class="form-horizontal"style="margin:0 100px 0 100px;background: rgba(255,255,255,0.2) !important;padding :10px 0px 10px 0px">
                     <div class="form-group">
-                        <label style="text-align:right !important" class="col-sm-3 control-label">Title</label>
+                        <label style="text-align:right !important;color :#FFFFFF;font-size:120%" class="col-sm-3 control-label">Title</label>
                         <input type="text" style="display:none" class="form-control" name="tid" />
                         <div class="col-md-5">
-                            <input type="text" class="form-control" name="title" />
+                            <input type="text" class="form-control" style="background : #F5F5F5" name="title" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <label style="text-align:right !important" class="col-sm-3 control-label">Body</label>
+                        <label style="text-align:right !important;color :#FFFFFF;font-size:120%" class="col-sm-3 control-label">Body</label>
                         <div class="col-md-7">
-                            <textarea type="text" rows="18"  class="form-control input-lg" name="description" ></textarea>
+                            <textarea type="text" rows="15" style="background : #F5F5F5" class="form-control input-lg" name="description" ></textarea>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-5 col-md-offset-3">
-                            <button type="submit" class="btn btn-success" style= "padding: 0.5em 1em 0.5em 1em">Draft</button>
-                            <button type="submit" class="btn btn-success" style="padding:0.5em 1em 0.5em 1em;margin-left:3em">Publish</button>
+                            <button type="submit" class="btn btn-success" style= "padding: 0.5em 1em 0.5em 1em;font-size:120%">Draft</button>
+                            <button type="submit" class="btn btn-success" style="padding:0.5em 1em 0.5em 1em;margin-left:3em;font-size:120%">Publish</button>
                         </div>
 
                     </div>
@@ -119,16 +119,16 @@
         <div class="navbar-collapse collapse" id= "bottom-navbar-collapse">
 
 	  		<ul class="list-inline custom" style="float : right;color: #FFFFFF">
-				        <li class="menu-list" onclick="location.href='~/../_dashboard'">Task</li>
+				        <li class="menu-list" onclick="location.href='~/../_dashboard'">Tasks</li>
                 <li class="active menu-list" onclick="location.href='~/../_insert_post'">New Post</li>
-                <li class="menu-list" onclick="location.href='~/../events.tpl'">Events</li>
-                <li class="menu-list" onclick="location.href='~/../events.tpl'">Explore</li>
+                <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_events'">Events</li>
+                <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_events'">Explore</li>
 			 </ul>
 
         </div><!--/.navbar-collapse -->
       </div>
  </div>
-</div>
+
 
 
 
@@ -137,11 +137,4 @@
 </div>
 </body>
 
-
-<script type="text/javascript">
-
-
-
-
-</script>
 

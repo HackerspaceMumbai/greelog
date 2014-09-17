@@ -31,16 +31,25 @@ def homepage():
     msg = request.query.get('msg', '');
     return render('welcome.tpl', msg=msg);
 
+@app.get('/_login')
+def login_get():
+    redirect('/');
+
 @app.post('/_login')
 def login():
     iname = request.forms.get('username');
     ihasw = str(hash(request.forms.get('password')));
     cdbout = cdb.select_individual(iname);
-    cdb_ihasw = cdbout[xlat_i['ihasw']];
-    if cdb_ihasw == ihasw:
-        set_cookie(iname);
-        redirect(HOME + '_dashboard');
-    return 'INVALID LOGIN ATTEMPT. PLEASE RETRY.'
+    if cdbout is not None:
+        cdb_ihasw = cdbout[xlat_i['ihasw']];
+        if cdb_ihasw == ihasw:
+            set_cookie(iname);
+            redirect(HOME + '_dashboard');
+    return render('welcome.tpl', msg="INVALID LOGIN: PLEASE TRY AGAIN")
+
+@app.get('/_register')
+def register_get():
+    redirect('/');
 
 @app.post('/_register')
 def register():
@@ -70,6 +79,13 @@ def events():
     iname = check_cookie();
     if iname is not False:
         return render('events.tpl')
+    redirect(HOME);
+
+@app.get('/_explore')
+def explore():
+    iname = check_cookie();
+    if iname is not False:
+        return render('list_posts.tpl')
     redirect(HOME);
 
 @app.get('/_insert_post')
@@ -103,19 +119,13 @@ def select_all_posts(iname):
 @app.get('/_logout')
 def logout():
         response.set_cookie('u', 'empty');
-        return render('''YOU HAVE SUCCESSFULLY LOGGED OUT.<br>
-            <a href="{{home}}">&lt;&lt;&lt; &nbsp; Return Home</a>?''', home=HOME);
+        redirect(HOME);
 
-TASKS = {
-    1: dict(title="task1", description="description1", weight=100),
-    2: dict(title="task2", description="description2", weight=200),
-    3: dict(title="task3", description="description3", weight=300),
-    4: dict(title="task4", description="description4", weight=400),
-    5: dict(title="task5", description="description5", weight=500),
-    6: dict(title="task6", description="description6", weight=600),
-};
-
-def set_home(home):
-    "Helpful in running code on localhost";
-    global HOME;
-    HOME = home;
+TASKS = [
+    dict(title="Rain-Water Harvesting", description="Conserve the rain water by implementing rain water harvesting system at your society.", weight=250),
+    dict(title="Adopt a tree!", description="By helping to water and care for a young street tree, you can help build a healthy tree canopy on your street.", weight=50),
+    dict(title="Replace standard bulbs with CFLs", description="Compact fluorescent light bulbs are more energy-efficient than regular bulbs, while giving off the same amount of light.", weight=30),
+    dict(title="task4", description="description4", weight=400),
+    dict(title="task5", description="description5", weight=500),
+    dict(title="task6", description="description6", weight=600),
+];

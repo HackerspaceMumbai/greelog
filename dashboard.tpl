@@ -2,7 +2,7 @@
 <html ng-app="appUser">
 
 <head>
-<title>Greelog</title>
+<title>Greelog: Dashboard</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -34,7 +34,7 @@
 </head>
 
 
-<body>
+<body style="background-image : url('~/../img/GreeLog_Cover_Photo.jpg'); background-size: cover">
 
 <div id='content' ng-controller="dashoboard_controller">
 
@@ -69,7 +69,7 @@
 
 
  <!-- MAIN CONTENT -->
- <div class="container" style="display:block;margin-top:65px;background:#FFFFFF">
+ <div class="container" style="display:block;margin-top:65px">
 
  	<h5> Recommended task </h5>
 
@@ -97,6 +97,7 @@
 	          <p><a class="btn btn-default"  data-toggle="modal" data-target="#submitTaskModal" role="button">Submit details &raquo;</a></p>
 	        </div>
         </div>
+
       </div>
 
 
@@ -115,7 +116,7 @@
 
             <div class="modal-body">
                 <!-- The form is placed inside the body of modal -->
-                <form id="submitTaskForm" method="post" class="form-horizontal">
+                <form id="submitTaskForm"  class="form-horizontal">
                     <div class="form-group">
                         <label class="col-md-3 control-label">Link</label>
                         <input type="text" style="display:none" class="form-control" name="tid" />
@@ -131,7 +132,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-md-5 col-md-offset-3">
-                            <button type="submit" class="btn btn-success">Done</button>
+                            <button type="submit" onclick="location.href='http://greelog.pythonanywhere.com/_dashboard'" class="btn btn-success">Done</button>
                         </div>
                     </div>
                 </form>
@@ -158,10 +159,10 @@
         <div class="navbar-collapse collapse" id= "bottom-navbar-collapse">
 
 	  		<ul class="list-inline custom" style="float : right;color: #FFFFFF">
-				  <li class="active menu-list">Task</li>
+				  <li class="active menu-list">Tasks</li>
             	  <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_insert_post'">New Post</li>
             	  <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_events'">Events</li>
-            	  <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_list_posts'">Explore</li>
+            	  <li class="menu-list" onclick="location.href='http://greelog.pythonanywhere.com/_explore'">Explore</li>
 			</ul>
 
         </div><!--/.navbar-collapse -->

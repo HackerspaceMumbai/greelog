@@ -7,7 +7,7 @@ li { cursor: pointer; }
 
 .menu-list{
 
-	
+
 	font-size: 115%;
 	margin-right: 20px;
 	margin-top: 10px;
@@ -16,15 +16,15 @@ li { cursor: pointer; }
 
 .active{
 
-border-bottom: 3px solid #3d8b3d; 
+border-bottom: 3px solid #3d8b3d;
 
 }
 
 
-.menu-list:hover, 
+.menu-list:hover,
 .menu-list:focus {
-	border-bottom: 3px solid #5cb85c; 
-    
+	border-bottom: 3px solid #5cb85c;
+
 }
 
 .form-horizontal .control-label{
@@ -35,9 +35,9 @@ text-align:left;
 
 .tasks {
 
-	box-shadow: 0 0 5px #B8B8B8;
+	box-shadow: 0 0 2px #B8B8B8;
 	padding: 10px;
-	background : rgba(255,255,255,0.9)
+	background : rgba(255,255,255,0.95)
 }
 
 .badge{

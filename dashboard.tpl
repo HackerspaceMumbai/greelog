@@ -56,9 +56,13 @@
           <form name="loginForm" methode="POST" action="/_logout" class="navbar-form navbar-right" role="form">
 
             <div class="form-group">
-              <h5><span id= "username" style="color : #FFFFFF; margin-right:10px;">Welcome</span><span style="margin-right:25px;" class="badge">42</span> </h5>
+              <h5><span id= "username" style="color : #FFFFFF; margin-right:10px;">Welcome</span>
+                 <button type="button" class="btn btn-success">
+                      Karma <span class="badge">325</span>
+                 </button>
+              </h5>
             </div>
-            <button type="submit"  style= "background: #B8B8B8"class="btn">Logout</button>
+            <button type="submit"  style= "background: #B8B8B8;margin-left:20px;"class="btn">Logout</button>
           </form>
         </div><!--/.navbar-collapse -->
       </div>

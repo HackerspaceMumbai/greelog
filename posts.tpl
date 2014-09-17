@@ -56,9 +56,13 @@
           <form name="loginForm" methode="POST" action="/_logout" class="navbar-form navbar-right" role="form">
 
             <div class="form-group">
-              <h5><span id= "username" style="color : #FFFFFF; margin-right:10px;">Welcome</span><span style="margin-right:25px;" class="badge">42</span> </h5>
+              <h5><span id= "username" style="color : #FFFFFF; margin-right:10px;">Welcome</span>
+                 <button type="button" class="btn btn-success">
+                      Karma <span class="badge">325</span>
+                 </button>
+              </h5>
             </div>
-            <button type="submit"  style= "background: #B8B8B8"class="btn">Logout</button>
+            <button type="submit"  style= "background: #B8B8B8;margin-left:20px;"class="btn">Logout</button>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -71,7 +75,7 @@
  <!-- MAIN CONTENT -->
  <div class="container-fluid" style="display:block;margin-top:55px;">
 
- 	  <form id="submitPostForm" method="post" class="form-horizontal"style="margin:0 100px 0 100px;background: rgba(255,255,255,0.2) !important;padding :10px 0px 10px 0px">
+ 	  <form id="submitPostForm" method="post" class="form-horizontal"style="margin:10px 100px 0 100px;background: rgba(255,255,255,0.2) !important;padding :10px 0px 10px 0px">
                     <div class="form-group">
                         <label style="text-align:right !important;color :#FFFFFF;font-size:120%" class="col-sm-3 control-label">Title</label>
                         <input type="text" style="display:none" class="form-control" name="tid" />

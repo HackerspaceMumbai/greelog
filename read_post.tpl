@@ -34,8 +34,9 @@
 </head>
 
 
-<body>
-<div id='content' ng-controller="dashoboard_controller">
+<body style="background-image : url('http://greelog.pythonanywhere.com/img/GreeLog_Cover_Photo.jpg'); background-size: cover; min-height: 100%;
+    height: 100%;">
+
 
  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="display:block">
       <div class="container">
@@ -55,20 +56,25 @@
           <form name="loginForm" methode="POST" action="/_logout" class="navbar-form navbar-right" role="form">
 
             <div class="form-group">
-              <h5><span id= "username" style="color : #FFFFFF; margin-right:10px;">Welcome</span><span style="margin-right:25px;" class="badge">42</span> </h5>
+              <h5><span id= "username" style="color : #FFFFFF; margin-right:10px;">Welcome</span>
+                 <button type="button" class="btn btn-success">
+                      Karma <span class="badge">325</span>
+                 </button>
+              </h5>
             </div>
-            <button type="submit"  style= "background: #B8B8B8"class="btn">Logout</button>
+            <button type="submit"  style= "background: #B8B8B8;margin-left:20px;"class="btn">Logout</button>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
  </div>
-</div>
+
 
 
 
 
  <!-- MAIN CONTENT -->
- <div class="container-fluid" style="display:block;margin-top:65px;background:#FFFFFF">
+ <div class="container-fluid" style="display:block;margin-top:65px;background: rgba(255,255,255,0.45) !important;padding :10px 0px 10px 0px; min-height: 100%;
+    height: 100%;">
 
                     <div  style="display=block">
 
@@ -76,10 +82,10 @@
                             <span type="text" class="modal-title" style="font-size: 200%;"><center>{{title}}</center></span>
                         </div>
                     </div>
-                    <hr/>
+                    <br/>
                     <div  style="display:block">
-                        <div class="col-md-12">
-                            <span type="text" rows="18" class="form-control input-lg" name="description" >{{body}}</span>
+                        <div class="col-md-12" style="background: rgba(255,255,255,0.2) !important;max-width: 100%; min-height: 100%; height: 100%; overflow:auto;">
+                            <textarea rows="20"   style="margin:0 0 0 15%;float: none;" cols="150" disabled name="description" >{{body}}</textarea>
                         </div>
                     </div>
 

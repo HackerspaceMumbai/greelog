@@ -1,5 +1,3 @@
-Greelog is a green web blogging/networking platform.
+Greelog blogging/networking platform for environmentalists.
 
 It is currently being worked on.
-
-The web application is currently live @ http://greelog.pythonanywhere.com
